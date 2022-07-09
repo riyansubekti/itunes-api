@@ -6,7 +6,7 @@ import { HomeContext } from './context'
 import './App.css'
 
 const App = () => {
-  const [activeHome, setActiveHome] = useState(false);
+  const [activeHome, setActiveHome] = useState(true);
   const [activeSearch, setActiveSearch] = useState(true);
   const loadMore = 5;
   return (
