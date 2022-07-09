@@ -1,0 +1,33 @@
+.home--menu {
+  position: absolute;
+  width: 100%;
+  bottom: 26px;
+}
+
+.menu--album {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin: 0 30px 15px;
+  min-width: 280px;
+  padding: 13px;
+  text-align: center;
+  background-color: #FFF;
+  color: #64748b;
+  font-size: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.menu--search {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin: 0 30px 15px;
+  min-width: 280px;
+  padding: 13px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}

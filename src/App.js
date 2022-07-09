@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Home from './components/Home'
+import Header from './components/Header'
+import Content from './components/Content'
+import { HomeContext } from './context'
+import './App.css'
 
-function App() {
+const App = () => {
+  const [activeHome, setActiveHome] = useState(false);
+  const [activeSearch, setActiveSearch] = useState(true);
+  const loadMore = 5;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <HomeContext.Provider value={{ loadMore, activeHome, setActiveHome, activeSearch, setActiveSearch }}>
+        {
+          activeHome ? 
+            <Home />
+          : 
+          <>
+            <Header />
+            <Content />
+          </>
+        }
+      </HomeContext.Provider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,53 @@
+.content {
+  position: absolute;
+  width: 100%;
+}
+
+.content-container {
+  margin: 100px 30px 0;
+  text-align: center;
+}
+
+.content-container input {
+  min-width: 200px;
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid #7b34dd;
+  border-radius: 4px;
+  color: #7b34dd;
+}
+
+.content-container .group-input {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.content-container .btn-input {
+  margin-left: -4px;
+  background-color: #7b34dd;
+  color: #FFF;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.content-container p {
+  font-weight: normal;
+  color: #334155;
+  font-size: 14px;
+  text-align: center;
+}
+
+.content-container p span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #7b34dd;
+  padding-left: 8px;
+}
