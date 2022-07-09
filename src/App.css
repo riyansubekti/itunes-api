@@ -11,7 +11,4 @@ html body {
   margin: 0 auto;
   min-width: 340px;
   max-width: 600px;
-  height: 100vh;
-  background-color: #FFF;
-  box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.35), 0 1px 5px -1px rgba(0, 0, 0, 0.35);
 }
