@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { HomeContext } from '../context'
 import Card from './Card';
 import './Content.css'

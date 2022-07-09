@@ -6,7 +6,7 @@ import './Card.css'
 const Card = ({ title, image, artist, badge, coin }) => {
   return (
     <div className="card">
-      <img className="card-image" src={image} />
+      <img className="card-image" src={image} alt={title} />
       <div className="card-content">
         <div className="card-artist">{artist}</div>
         <div className="card-title">{title}</div>
@@ -15,7 +15,7 @@ const Card = ({ title, image, artist, badge, coin }) => {
             {badge}
           </div>
           <div className="card-coin">
-            <img src={coinSVG} alt="coin" />
+            <img src={coinSVG} alt={`coin-${coin}`} />
             <span>{coin}</span>
           </div>
         </div>
