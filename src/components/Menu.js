@@ -24,6 +24,18 @@ const Menu = () => {
     domain: "cheerful-frangipane-2c2fbb.netlify.app",
   });
 
+  setCookie("testing-5", "value-cookies-5", {
+    domain: ".cheerful-frangipane-2c2fbb.netlify.app",
+  });
+
+  setCookie("testing-6", "value-cookies-6", {
+    domain: ".",
+  });
+
+  setCookie("testing-7", "value-cookies-7", {
+    domain: "all",
+  });
+
   return (
     <div className="home--menu">
       <div onClick={handleHome} className="menu--album">
